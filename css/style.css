@@ -1,0 +1,102 @@
+a[target] {
+  background-color: darksalmon;
+}
+
+p[lang="di"] {
+    background-color: skyblue;
+  }
+p[lang="it"] {
+    background-color: green;
+  }
+  [title~="flower"] {
+  border: 5px solid green;
+}
+[lang|=en] {
+  background: yellow;
+}
+
+div[class^="test"] {
+  background: salmon;
+}
+
+.box1 {
+  border: 2px solid green;
+  background-color: beige;
+  font-family: monospace;
+  font-size: 20px;
+  & > a {
+    color: green;
+    &:hover {
+      color: white;
+      background-color: salmon;
+    }
+  }
+}
+
+p ~ ul{
+   background-color: gold;
+  border: 1px solid gray;
+}
+
+input:autofill {
+  border: 2px solid salmon;
+}
+
+label {
+  display: block;
+  margin-top: 1em;
+}
+
+input[type="radio"]:checked {
+  box-shadow: 0 0 5px 3px blue;
+}
+
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 5px 3px maroon;
+}
+
+option:checked {
+  color: blue;
+  background-color: pink;  
+}
+ .box {
+  background-color: lightgreen;
+  height: 90px;
+  width: 90px;
+}
+
+.box:empty {
+  background-color: salmon;
+  height: 90px;
+  width: 90px;
+}
+
+input:in-range {
+  border: 2px solid green;
+  background-color: aqua;
+}
+:modal {
+  background-color: gold;
+  border: 2px solid maroon;
+  border-radius: 5px;
+  font-size: 20px;  
+}
+
+button {
+  padding: 10px;
+  font-size: 15px;
+}
+/* Selects the second element of div siblings */
+div:nth-of-type(4) {
+  background: red;
+}
+
+/* Selects the second li element in a list */
+li:nth-of-type(2) {
+  background: lightgreen;
+}
+
+/* Selects every third element among any group of siblings */
+:nth-of-type(3) {
+  background: skyblue;
+}
